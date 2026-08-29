@@ -33,8 +33,8 @@ public:
         this->n_files = num_files();
         coeffs.resize(n_angles, n_files, n_cols);
         ion_thermal_speeds.resize(n_angles, n_files);
-        read_coeffs();
-        //read_coeffs_new_fmt();
+        //read_coeffs();
+        read_coeffs_new_fmt();
         compute_interp_coeffs();
     }
 
