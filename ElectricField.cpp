@@ -265,10 +265,10 @@ double ElectricField::compute_dist(double electric_field, int aspect_angle, doub
     //legendre polynomial rings
     const double f_cut = eval_legendre_series(coeffs1, tail_cut);
 
-    if (f_cut <= 0.0)
+    /*if (f_cut <= 0.0)
     {
         return 0.0;
-    }
+    }*/
 
     constexpr double delta = 1e-3;
     const double f_in = eval_legendre_series(coeffs1, tail_cut - delta);
